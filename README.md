@@ -1,2 +1,2 @@
-# My JS-Fundamentals at
-Software University
+# My JS-Fundamentals
+at Software University
