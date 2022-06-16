@@ -1,2 +1,2 @@
-# JS-Fundamentals
-Software University JS Fundamentals
+# My JS-Fundamentals at
+Software University
