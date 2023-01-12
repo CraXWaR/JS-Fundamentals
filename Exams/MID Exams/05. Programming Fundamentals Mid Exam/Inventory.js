@@ -11,27 +11,27 @@ function inventory(array) {
         if (command === 'Collect') {
             if (arr.includes(item)) {
                 continue;
-            }else{
+            } else {
                 arr.push(item)
             }
-        }else if(command === 'Drop'){
+        } else if (command === 'Drop') {
             if (arr.includes(item)) {
                 arr.splice(arr.indexOf(item), 1)
-            }else{
+            } else {
                 continue;
             }
-        }else if (command === 'Combine Items'){
+        } else if (command === 'Combine Items') {
             let newItems = item.split(':');
             if (arr.includes(newItems[0])) {
                 arr.splice(arr.indexOf(newItems[0]) + 1, 0, newItems[1])
-            }else{
+            } else {
                 continue;
             }
-        }else if (command === 'Renew'){
+        } else if (command === 'Renew') {
             if (arr.includes(item)) {
                 arr.splice(arr.indexOf(item), 1)
                 arr.push(item)
-            }else{
+            } else {
                 continue;
             }
         }
@@ -42,7 +42,7 @@ function inventory(array) {
 // 'Drop - Wood',
 // 'Craft!'])
 inventory(['Iron, Sword',
-'Drop - Bronze',
-'Combine Items - Sword:Bow',
-'Renew - Iron',
-'Craft!'])
+    'Drop - Bronze',
+    'Combine Items - Sword:Bow',
+    'Renew - Iron',
+    'Craft!'])

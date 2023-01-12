@@ -1,25 +1,25 @@
 function treasureHunt(array) {
     let treasureChest = array.shift().split("|");
     for (let i = 0; i < array.length; i++) {
-      let command = array[i].split(" ");
-      let token = command[0];
-  
-      if (token == "Loot") {
-        for (let j = 1; j < command.length; j++) {
-            let item = command[j];
-            if (treasureChest.includes(item) == false) {
-                treasureChest.unshift(item);
+        let command = array[i].split(" ");
+        let token = command[0];
+
+        if (token == "Loot") {
+            for (let j = 1; j < command.length; j++) {
+                let item = command[j];
+                if (treasureChest.includes(item) == false) {
+                    treasureChest.unshift(item);
+                }
             }
-        }
         } else if (token == "Drop") {
             let index = Number(command[1]);
             if (treasureChest.length > index && index >= 0) {
                 let excluded = treasureChest.splice(index, 1).join();
                 treasureChest.push(excluded);
-        }
+            }
         } else if (token == "Steal") {
             let index = Number(command[1]);
-  
+
             let stolen = treasureChest.splice(-index, index);
             console.log(stolen.join(", "));
         }
@@ -38,20 +38,20 @@ function treasureHunt(array) {
         console.log("Failed treasure hunt.");
     }
 }
-  treasureHunt([
+treasureHunt([
     "Gold|Silver|Bronze|Medallion|Cup",
     "Loot Wood Gold Coins",
     "Loot Silver Pistol",
     "Drop 3",
     "Steal 3",
     "Yohoho!",
-  ]);
-   
-  treasureHunt([
+]);
+
+treasureHunt([
     "Diamonds|Silver|Shotgun|Gold",
     "Loot Silver Medals Coal",
     "Drop -1",
     "Drop 1",
     "Steal 6",
     "Yohoho!",
-  ]);
+]);

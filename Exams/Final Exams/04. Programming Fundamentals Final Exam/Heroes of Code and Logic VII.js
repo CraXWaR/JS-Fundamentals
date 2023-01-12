@@ -23,14 +23,14 @@ function solve(input) {
             if (heros[tokens[1]].heroMp >= +tokens[2]) {
                 heros[tokens[1]].heroMp -= +tokens[2]
                 console.log(`${tokens[1]} has successfully cast ${tokens[3]} and now has ${heros[tokens[1]].heroMp} MP!`);
-            }else{
+            } else {
                 console.log(`${tokens[1]} does not have enough MP to cast ${tokens[3]}!`);
             }
         } else if (command === 'TakeDamage') {
             heros[tokens[1]].heroHp -= +tokens[2];
             if (heros[tokens[1]].heroHp > 0) {
                 console.log(`${tokens[1]} was hit for ${tokens[2]} HP by ${tokens[3]} and now has ${heros[tokens[1]].heroHp} HP left!`);
-            }else{
+            } else {
                 delete heros[tokens[1]]
                 console.log(`${tokens[1]} has been killed by ${tokens[3]}!`);
             }
@@ -39,7 +39,7 @@ function solve(input) {
                 let tempMp = 200 - heros[tokens[1]].heroMp
                 heros[tokens[1]].heroMp = 200
                 console.log(`${tokens[1]} recharged for ${tempMp} MP!`);
-            }else{
+            } else {
                 heros[tokens[1]].heroMp += +tokens[2]
                 console.log(`${tokens[1]} recharged for ${tokens[2]} MP!`);
             }
@@ -48,7 +48,7 @@ function solve(input) {
                 let tempHp = 100 - heros[tokens[1]].heroHp
                 heros[tokens[1]].heroHp = 100
                 console.log(`${tokens[1]} healed for ${tempHp} HP!`);
-            }else{
+            } else {
                 heros[tokens[1]].heroHp += +tokens[2]
                 console.log(`${tokens[1]} healed for ${tokens[2]} HP!`);
             }

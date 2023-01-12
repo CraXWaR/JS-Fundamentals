@@ -20,19 +20,19 @@ function solve(input) {
         if (command === "Rate") {
             if (flowers[0] in obj) {
                 obj[flowers[0]].rating.push(+flowers[1]);
-            }else{
+            } else {
                 console.log("error");
             }
-        }else if (command === "Update") {
+        } else if (command === "Update") {
             if (flowers[0] in obj) {
                 obj[flowers[0]].rarity = +flowers[1];
-            }else{
+            } else {
                 console.log("error");
             }
-        }else if (command === "Reset") {
+        } else if (command === "Reset") {
             if (flowers[0] in obj) {
                 obj[flowers[0]].rating = []
-            }else{
+            } else {
                 console.log("error");
             }
         }
@@ -50,8 +50,8 @@ function solve(input) {
     }
 }
 solve(["2",
-"Candelabra<->10",
-"Oahu<->10",
-"Rate: Oahu - 7",
-"Rate: Candelabra - 6",
-"Exhibition"])
+    "Candelabra<->10",
+    "Oahu<->10",
+    "Rate: Oahu - 7",
+    "Rate: Candelabra - 6",
+    "Exhibition"])

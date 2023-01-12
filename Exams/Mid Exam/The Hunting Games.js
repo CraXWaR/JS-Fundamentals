@@ -9,7 +9,7 @@ function huntingGame(input) {
     waterDay = Number(waterDay)
     let foodDay = input.shift()
     foodDay = Number(foodDay)
-    
+
     let win = true
 
     let totalWater = days * players * waterDay
@@ -23,12 +23,12 @@ function huntingGame(input) {
             break;
         }
         if (index % 2 === 0) {
-            groupEnergy  += (groupEnergy * 5) / 100;
+            groupEnergy += (groupEnergy * 5) / 100;
             totalWater -= (totalWater * 30) / 100;
         }
         if (index % 3 === 0) {
             totalFood -= totalFood / players;
-            groupEnergy  += (groupEnergy * 10) / 100;
+            groupEnergy += (groupEnergy * 10) / 100;
         }
     }
     if (win) {
@@ -36,19 +36,19 @@ function huntingGame(input) {
     }
 }
 huntingGame(["12",
-"6",
-"4430",
-"9.8",
-"5.5",
-"620.3",
-"840.2",
-"960.1",
-"220",
-"340",
-"674",
-"365",
-"345.5",
-"212",
-"412.12",
-"258",
-"496"])
+    "6",
+    "4430",
+    "9.8",
+    "5.5",
+    "620.3",
+    "840.2",
+    "960.1",
+    "220",
+    "340",
+    "674",
+    "365",
+    "345.5",
+    "212",
+    "412.12",
+    "258",
+    "496"])

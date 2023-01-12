@@ -13,7 +13,7 @@ function solve(input) {
             key
         }
     }
-    
+
     while (input[0] !== 'Stop') {
         let line = input.shift();
         let tokens = line.split('|');

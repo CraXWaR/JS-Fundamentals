@@ -7,7 +7,7 @@ function store(input) {
     while (input[index] != 'special' && input[index] != 'regular') {
         if (Number(input[index] >= 0)) {
             total += Number(input[index])
-        }else{
+        } else {
             console.log('Invalid price!');
         }
         index++;
@@ -24,7 +24,7 @@ function store(input) {
         console.log(`Taxes: ${tax.toFixed(2)}$`);
         console.log('-----------');
         console.log(`Total price: ${total.toFixed(2)}$`);
-    }else{
+    } else {
         console.log('Invalid order!');
     }
 }
@@ -36,5 +36,5 @@ store(([
     '18.50',
     '16.86',
     'special'
-    ])
-    )
+])
+)

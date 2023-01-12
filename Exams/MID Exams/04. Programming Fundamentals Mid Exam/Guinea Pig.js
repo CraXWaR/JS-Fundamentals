@@ -9,7 +9,7 @@ function pig(input) {
     weight *= 1000
 
     isEnough = true
-    
+
     for (let index = 1; index <= 30; index++) {
         if (food < 300 || hay < food * 0.05 || cover < weight / 3) {
             console.log('Merry must go to the pet store!');
@@ -21,14 +21,14 @@ function pig(input) {
             hay -= food * 0.05;
         }
         if (index % 3 === 0) {
-            cover -= weight / 3;  
+            cover -= weight / 3;
         }
     }
     if (isEnough) {
-        console.log(`Everything is fine! Puppy is happy! Food: ${(food/1000).toFixed(2)}, Hay: ${(hay/1000).toFixed(2)}, Cover: ${(cover/1000).toFixed(2)}.`);
+        console.log(`Everything is fine! Puppy is happy! Food: ${(food / 1000).toFixed(2)}, Hay: ${(hay / 1000).toFixed(2)}, Cover: ${(cover / 1000).toFixed(2)}.`);
     }
 }
-pig(["10", 
-"5", 
-"5.2", 
-"1"])
+pig(["10",
+    "5",
+    "5.2",
+    "1"])

@@ -15,7 +15,7 @@ function numbs(string) {
     let topValues = newArr.sort((a, b) => b - a).slice(0, 5);
     if (topValues.length > 0) {
         console.log(topValues.join(' '));
-    }else{
+    } else {
         console.log('No');
     }
 }

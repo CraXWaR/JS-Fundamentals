@@ -1,6 +1,6 @@
 function moveTarget(arr) {
     let nums = arr.shift().split(' ').map(Number);
-    
+
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == "End") {
             console.log(nums.join('|'));
@@ -43,11 +43,11 @@ function moveTarget(arr) {
     }
 }
 moveTarget(["52 74 23 44 96 110",
-"Shoot 5 10",
-"Shoot 1 80",
-"Strike 2 1",
-"Add 22 3",
-"End"])
+    "Shoot 5 10",
+    "Shoot 1 80",
+    "Strike 2 1",
+    "Add 22 3",
+    "End"])
 moveTarget(["1 2 3 4 5",
-"Strike 0 1",
-"End"])
+    "Strike 0 1",
+    "End"])

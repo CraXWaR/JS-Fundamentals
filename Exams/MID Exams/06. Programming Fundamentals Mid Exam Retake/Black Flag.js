@@ -6,7 +6,7 @@ function blackFlag(input) {
     for (let index = 1; index <= days; index++) {
         if (index % 3 !== 0) {
             sum += daily
-        }else{
+        } else {
             sum += daily + (daily * 0.5)
         }
         if (index % 5 === 0) {
@@ -16,11 +16,10 @@ function blackFlag(input) {
     let percentage = (sum / expect) * 100
     if (sum >= expect) {
         console.log(`Ahoy! ${sum.toFixed(2)} plunder gained.`);
-    }else{
+    } else {
         console.log(`Collected only ${percentage.toFixed(2)}% of the plunder.`);
     }
 }
 blackFlag(["5",
-"40",
-"100"])
- 
+    "40",
+    "100"])

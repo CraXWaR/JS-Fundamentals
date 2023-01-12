@@ -19,16 +19,16 @@ function solve(input) {
                 group = '00'
             }
             console.log(`Product group: ${group}`);
-        }else{
+        } else {
             console.log('Invalid barcode');
         }
         n--
     }
 }
 solve(["6",
-"@###Val1d1teM@###",
-"@#ValidIteM@#",
-"##InvaliDiteM##",
-"@InvalidIteM@",
-"@#Invalid_IteM@#",
-"@#ValiditeM@#"])
+    "@###Val1d1teM@###",
+    "@#ValidIteM@#",
+    "##InvaliDiteM##",
+    "@InvalidIteM@",
+    "@#Invalid_IteM@#",
+    "@#ValiditeM@#"])

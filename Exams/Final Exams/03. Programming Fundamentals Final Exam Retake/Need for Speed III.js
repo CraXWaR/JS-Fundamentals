@@ -6,7 +6,7 @@ function solve(input) {
         mileage = +mileage;
         fuel = +fuel;
 
-        yard[model] = { 
+        yard[model] = {
             mileage,
             fuel
         };

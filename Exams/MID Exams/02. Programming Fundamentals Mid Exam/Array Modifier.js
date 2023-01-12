@@ -11,26 +11,26 @@ function arrModif(input) {
                 let temp = arr[index1];
                 arr[index1] = arr[index2];
                 arr[index2] = temp;
-            break;
+                break;
             case 'multiply':
                 arr[index1] *= arr[index2]
-            break;
+                break;
             case 'decrease':
                 for (let index = 0; index < arr.length; index++) {
                     arr[index]--
                 }
-            break;
+                break;
         }
     }
     console.log(arr.join(', '));
 }
 arrModif([
-  '23 -2 321 87 42 90 -123',
-  'swap 1 3',
-  'swap 3 6',
-  'swap 1 0',
-  'multiply 1 2',
-  'multiply 2 1',
-  'decrease',
-  'end'
+    '23 -2 321 87 42 90 -123',
+    'swap 1 3',
+    'swap 3 6',
+    'swap 1 0',
+    'multiply 1 2',
+    'multiply 2 1',
+    'decrease',
+    'end'
 ])

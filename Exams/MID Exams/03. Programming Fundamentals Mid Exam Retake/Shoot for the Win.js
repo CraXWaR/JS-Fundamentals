@@ -8,35 +8,29 @@ function shootWin(arr) {
             console.log(`Shot targets: ${shotCount} -> ${darts.join(' ')}`);
 
         } else {
-
             index = Number(index);
-
             if (darts.length > index) {
                 darts = darts.map(
                     e => {
                         if (e > darts[index]) {
                             return e -= darts[index];
-
                         } else {
-
                             if (e != -1) {
                                 return e += darts[index];
                             }
-
                             return e;
                         }
                     }
                 );
-
                 darts[index] = -1;
                 shotCount++;
             }
         }
     }
 }
-shootWin(["24 50 36 70", 
-"0",
-"4",
-"3",
-"1",
-"End"])
+shootWin(["24 50 36 70",
+    "0",
+    "4",
+    "3",
+    "1",
+    "End"])

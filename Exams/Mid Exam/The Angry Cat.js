@@ -7,7 +7,7 @@ function angryCat(array, cat, price) {
             if (array[index] < el) {
                 sumL += array[index]
             }
-        }else{
+        } else {
             if (array[index] >= el) {
                 sumL += array[index]
             }
@@ -18,7 +18,7 @@ function angryCat(array, cat, price) {
             if (array[index] < el) {
                 sumR += array[index]
             }
-        }else{
+        } else {
             if (array[index] >= el) {
                 sumR += array[index]
             }
@@ -26,9 +26,9 @@ function angryCat(array, cat, price) {
     }
     if (sumL === sumR) {
         console.log(`Left - ${sumL}`);
-    }else if (sumL > sumR) {
+    } else if (sumL > sumR) {
         console.log(`Left - ${sumL}`);
-    }else{
+    } else {
         console.log(`Right - ${sumR}`);
     }
 }

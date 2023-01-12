@@ -3,7 +3,7 @@ function bonusScore(input) {
     let countLectures = Number(input[1]);
     let additionalBonus = Number(input[2]);
     let attendanceEachStudent = Number(input);
- 
+
     let highestBonus = 0;
     let highestLectures = 0;
     let prevBonus = 0;
@@ -25,4 +25,4 @@ bonusScore([
     '23', '27', '28', '15',
     '17', '25', '26', '5',
     '18'
-  ])
+])
