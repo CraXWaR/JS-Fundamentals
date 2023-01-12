@@ -2,15 +2,15 @@ function maxSeq(arr) {
     let newArr = [];
     let seq = [];
 
-    for(let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
         seq = [];
-        for(let j = i; j < arr.length; j++){
-            if(arr[i] === arr[j]){
+        for (let j = i; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
                 seq.push(arr[j]);
-            }else{
+            } else {
                 break;
             }
-            if(seq.length > newArr.length){
+            if (seq.length > newArr.length) {
                 newArr = seq
             }
         }

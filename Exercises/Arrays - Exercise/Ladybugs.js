@@ -7,7 +7,7 @@ function ladybugs(arr) {
     let indexForStart = 0;
     let command = "";
     if (arrLength > 0 && arrLength <= 1000) {
- 
+
         for (let k = 0; k < arrLength; k++) {
             tempArr[k] = 0;
         }
@@ -16,16 +16,16 @@ function ladybugs(arr) {
                 tempArr[initValue[i]] = 1;
             }
         }
- 
+
         for (let i = 2; i < arr.length; i++) {
             currentMovie = arr[i].split(' ');
             indexForStart = Number(currentMovie[0]);
             command = currentMovie[1];
- 
+
             if (tempArr[indexForStart] !== 1 || indexForStart < 0 || indexForStart >= tempArr.length) {
                 continue;
             }
- 
+
             curStep = Number(currentMovie[2]);
             if (curStep < 0) {
                 curStep = Math.abs(curStep);
@@ -57,7 +57,7 @@ function ladybugs(arr) {
             } else {
                 let newPosition = indexForStart - curStep;
                 if (tempArr[newPosition] === 1) {
- 
+
                     for (let j = newPosition; j >= 0; j -= curStep) {
                         if (tempArr[j] == 1) {
                             continue
@@ -81,7 +81,7 @@ function ladybugs(arr) {
         }
     }
 }
-ladybugs([ 3, '0 1',
-'0 right 1',
-'2 right 1' ]
+ladybugs([3, '0 1',
+    '0 right 1',
+    '2 right 1']
 )

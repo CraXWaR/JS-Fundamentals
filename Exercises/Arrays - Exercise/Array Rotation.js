@@ -1,5 +1,5 @@
 function arrRot(arr, n) {
-    for (let i = 0; i < n; i++){
+    for (let i = 0; i < n; i++) {
         let currNum = arr.shift();
         arr.push(currNum);
     }

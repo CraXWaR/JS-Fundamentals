@@ -2,11 +2,11 @@ function addAndSub(arr) {
     let sum = 0;
     let newArrSum = 0;
 
-    for (let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
         sum += arr[i]
-        if (arr[i] % 2 === 0){
+        if (arr[i] % 2 === 0) {
             arr[i] += i;
-        }else {
+        } else {
             arr[i] -= i;
         }
         newArrSum += arr[i]

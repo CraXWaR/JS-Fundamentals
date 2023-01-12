@@ -1,16 +1,16 @@
 function maxNum(arr) {
     let topNum = [];
-    for (let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
         let curEl = arr[i];
         let isTop = true;
-        for(let j = i + 1; j < arr.length; j++){
+        for (let j = i + 1; j < arr.length; j++) {
             let nextEl = arr[j];
-            if (curEl <= nextEl){
+            if (curEl <= nextEl) {
                 isTop = false;
                 break;
             }
         }
-        if (isTop){
+        if (isTop) {
             topNum.push(curEl)
         }
     }

@@ -7,35 +7,35 @@ function solve(input) {
 
     while (a !== 'End') {
         let tokens = a.split(' ')
-        
+
         if (tokens[0] === 'Enroll') {
             if (arr.includes(tokens[1])) {
                 console.log(`${tokens[1]} is already enrolled.`);
-            }else{
-                heros[tokens[1]] = {'spellBook': []}
+            } else {
+                heros[tokens[1]] = { 'spellBook': [] }
                 arr.push(tokens[1])
             }
         } else if (tokens[0] === 'Learn') {
             if (Object.keys(heros).includes(tokens[1])) {
-                if ( heros[tokens[1]].spellBook.includes(tokens[2])) {
+                if (heros[tokens[1]].spellBook.includes(tokens[2])) {
                     console.log(`${tokens[1]} has already learnt ${tokens[2]}.`);
-                }else{
+                } else {
                     heros[tokens[1]].spellBook.push(tokens[2])
                 }
-            }else{
+            } else {
                 console.log(`${tokens[1]} doesn't exist.`);
             }
         } else if (tokens[0] === 'Unlearn') {
             if (Object.keys(heros).includes(tokens[1])) {
                 if (!heros[tokens[1]].spellBook.includes(tokens[2])) {
                     console.log(`${tokens[1]} doesn't know ${tokens[2]}.`);
-                }else{
+                } else {
                     let index = heros[tokens[1]].spellBook.indexOf(tokens[2])
                     let book = heros[tokens[1]].spellBook
                     book = book.splice(0, index)
                     heros[tokens[1]].spellBook = book
                 }
-            }else{
+            } else {
                 console.log(`${tokens[1]} doesn't exist.`);
             }
         }
@@ -49,9 +49,9 @@ function solve(input) {
     }
 }
 solve(["Enroll Stefan",
-"Enroll Peter",
-"Enroll John",
-"Learn Stefan Spell",
-"Learn Stefan Kur",
-"Learn Peter Dispel",
-"End"])
+    "Enroll Peter",
+    "Enroll John",
+    "Learn Stefan Spell",
+    "Learn Stefan Kur",
+    "Learn Peter Dispel",
+    "End"])

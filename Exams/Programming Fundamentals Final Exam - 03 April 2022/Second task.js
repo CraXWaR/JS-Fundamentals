@@ -14,20 +14,20 @@ function solve(input) {
                 let char = String.fromCharCode(b);
                 arr.push(char)
             }
-            let validnost = valid[0].replace(/[$%]/g,'');
+            let validnost = valid[0].replace(/[$%]/g, '');
             console.log(`${validnost} ${arr.join('')}`);
-        }else{
+        } else {
             console.log('Valid message not found!');
         }
     }
 }
 solve(["4",
-"$Request$: [73]|[115]|[105]|",
-"%Taggy$: [73]|[73]|[73]|",
-"%Taggy%: [118]|[97]|[108]|",
-"$Request$: [73]|[115]|[105]|[32]|[75]|"])
+    "$Request$: [73]|[115]|[105]|",
+    "%Taggy$: [73]|[73]|[73]|",
+    "%Taggy%: [118]|[97]|[108]|",
+    "$Request$: [73]|[115]|[105]|[32]|[75]|"])
 console.log('-------');
 solve(["3",
-"This shouldnt be valid%Taggy%: [118]|[97]|[108]|",
-"$tAGged$: [97][97][97]|",
-"$Request$: [73]|[115]|[105]|true"])
+    "This shouldnt be valid%Taggy%: [118]|[97]|[108]|",
+    "$tAGged$: [97][97][97]|",
+    "$Request$: [73]|[115]|[105]|true"])
