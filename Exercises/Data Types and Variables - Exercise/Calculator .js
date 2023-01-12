@@ -1,8 +1,8 @@
 function calc(num1, oper, num2) {
     let sum;
 
-    switch(oper){
-        case "+" :
+    switch (oper) {
+        case "+":
             sum = num1 + num2;
             break;
         case "-":
@@ -20,4 +20,4 @@ function calc(num1, oper, num2) {
 calc(5,
     '+',
     10
-    )
+)

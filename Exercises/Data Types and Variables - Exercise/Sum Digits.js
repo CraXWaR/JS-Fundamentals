@@ -1,8 +1,8 @@
-function sumDig(n){
+function sumDig(n) {
     let sum = 0;
     let numAsString = n.toString()
 
-    for (const char of numAsString){
+    for (const char of numAsString) {
         sum += Number(char);
     }
     console.log(sum);

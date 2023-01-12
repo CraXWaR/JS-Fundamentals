@@ -28,7 +28,7 @@ function solve(data) {
         return a;
     }
 
-    return Object.entries(data.reduce((a, b) =>{
+    return Object.entries(data.reduce((a, b) => {
         return objGenerator(b, a);
     }, {}))
         .map(pointsCalc)
@@ -42,5 +42,5 @@ solve([
     'Tomas: 6H, 7S, KC, KD, 5S, 10C',
     'Andrea: QH, QC, JS, JD, JC',
     'Peter: JD, JD, JD, JD, JD, JD'
-    ]
-    )
+]
+)

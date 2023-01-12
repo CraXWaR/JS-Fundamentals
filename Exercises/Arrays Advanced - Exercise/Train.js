@@ -6,8 +6,8 @@ function train(input) {
         let current = input[i].split(' ');
         if (current.includes("Add")) {
             wagons.push(Number(current[1]));
-        }else {
-            currentNum = Number(current);
+        } else {
+            let currentNum = Number(current);
             for (let j = 0; j < wagons.length; j++) {
                 if (currentNum + wagons[j] <= maxPassangerCapacity) {
                     wagons[j] += currentNum;
@@ -16,14 +16,14 @@ function train(input) {
             }
         }
     }
-    console.log(wagons.join (' '));
-} 
+    console.log(wagons.join(' '));
+}
 
 train(['32 54 21 12 4 0 23',
-'75',
-'Add 10',
-'Add 0',
-'30',
-'10',
-'75']
+    '75',
+    'Add 10',
+    'Add 0',
+    '30',
+    '10',
+    '75']
 )

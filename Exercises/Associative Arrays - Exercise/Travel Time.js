@@ -33,4 +33,4 @@ travelTime([
     "France > Paris > 2000",
     "Albania > Tirana > 1000",
     "Bulgaria > Sofia > 200"
-    ])
+])

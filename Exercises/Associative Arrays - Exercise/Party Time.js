@@ -16,7 +16,7 @@ function guestListMapTracker(arr) {
         }
         return map;
     }
- 
+
     function mapManipulator(map, arr) {
         for (const e of arr.slice(arr.indexOf("PARTY") + 1)) {
             if (isNaN(e[0]) == false) {
@@ -41,13 +41,13 @@ function guestListMapTracker(arr) {
     return outputParse(mapManipulator(mapGenerator(arr), arr));
 }
 solve(['7IK9Yo0h',
-'9NoBUajQ',
-'Ce8vwPmE',
-'SVQXQCbc',
-'tSzE5t0p',
-'PARTY',
-'9NoBUajQ',
-'Ce8vwPmE',
-'SVQXQCbc'
+    '9NoBUajQ',
+    'Ce8vwPmE',
+    'SVQXQCbc',
+    'tSzE5t0p',
+    'PARTY',
+    '9NoBUajQ',
+    'Ce8vwPmE',
+    'SVQXQCbc'
 ]
 )

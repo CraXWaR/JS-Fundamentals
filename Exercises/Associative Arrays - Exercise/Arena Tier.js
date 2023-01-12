@@ -53,12 +53,12 @@ function solve(data) {
             .join('\n');
         return `${name}: ${totalPoints} skill\n${sortedSkills}`;
     }
- 
+
     while (data[0] != 'Ave Cesar') {
         let line = data.shift();
         commandsMap[line.includes('vs')](line, obj);
     }
- 
+
     return Object.entries(obj)
         .sort(byPointsAndNames)
         .map(outpuParse)
@@ -70,5 +70,5 @@ solve([
     'Stefan -> Duck -> 200',
     'Stefan -> Tiger -> 250',
     'Ave Cesar'
-    ]
-    )
+]
+)

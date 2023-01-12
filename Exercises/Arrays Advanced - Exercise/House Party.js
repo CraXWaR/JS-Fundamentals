@@ -7,21 +7,21 @@ function houseParty(arr) {
         if (attendance === 'going!') {
             if (!listOfGuests.includes(name)) {
                 listOfGuests.push(name);
-            }else {
+            } else {
                 console.log(`${name} is already in the list!`)
             }
-        }else if (attendance === 'not') {
+        } else if (attendance === 'not') {
             if (listOfGuests.includes(name)) {
                 listOfGuests.splice(listOfGuests.indexOf(name))
-        }else{
-            console.log(`${name} is not in the list!`);
+            } else {
+                console.log(`${name} is not in the list!`);
             }
         }
     }
     console.log(`${listOfGuests.join('\n')}`);
 }
 houseParty(['Allie is going!',
-'George is going!',
-'John is not going!',
-'George is not going!']
+    'George is going!',
+    'John is not going!',
+    'George is not going!']
 )

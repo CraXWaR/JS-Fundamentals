@@ -26,7 +26,7 @@ function arrMuni(array, commands) {
                 break;
             case 'sumPairs':
                 let resArr = [];
-                if(array.length % 2 !== 0){
+                if (array.length % 2 !== 0) {
                     array.push(0);
                 }
                 for (let index = 0; index < array.length - 1; index += 2) {
@@ -43,4 +43,4 @@ function arrMuni(array, commands) {
 }
 arrMuni([1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
     ["sumPairs", "sumPairs", "addMany 0 -1 -2 -3", "print"]
-    )
+)

@@ -20,11 +20,11 @@ function mapWordsTracker(data) {
     function outputParse(arrOfTuples) {
         return arrOfTuples.map(([k, v] = e) => `${k} - ${v}`).join('\n')
     }
- 
-    return outputParse(sortByCount( mapWordsCounterTuples(mapGenerator(data[0]), data.slice(1))));
+
+    return outputParse(sortByCount(mapWordsCounterTuples(mapGenerator(data[0]), data.slice(1))));
 }
 solve([
-    'this sentence', 
+    'this sentence',
     'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task'
-    ]
-    )
+]
+)

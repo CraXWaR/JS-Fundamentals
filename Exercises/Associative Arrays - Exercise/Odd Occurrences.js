@@ -7,7 +7,7 @@ function solve(data) {
         a.set(b, a.get(b) + 1)
         return a;
     }, new Map());
- 
+
     let r = '';
     for (const kvp of map) {
         if (kvp[1] % 2 != 0) {

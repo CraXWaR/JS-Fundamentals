@@ -5,7 +5,7 @@ function searchNum(array, nums) {
 
     let myNewArr = array.splice(0, numToTake);
     myNewArr = myNewArr.splice(deleteNumbs);
-    
+
     let count = 0;
     for (let index = 0; index < myNewArr.length; index++) {
         if (myNewArr[index] === searchNum) {
@@ -16,4 +16,4 @@ function searchNum(array, nums) {
 }
 searchNum([5, 2, 3, 4, 1, 6],
     [5, 2, 3]
-    )
+)

@@ -1,7 +1,7 @@
 function lowOrUp(ch) {
-    if (ch == ch.toUpperCase()){
+    if (ch == ch.toUpperCase()) {
         console.log('upper-case');
-    }else {
+    } else {
         console.log("lower-case");
     }
 }

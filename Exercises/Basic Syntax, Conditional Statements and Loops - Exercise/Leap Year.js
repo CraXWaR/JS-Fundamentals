@@ -1,15 +1,15 @@
-function leap (year){
-    if (year % 4 === 0){
-        if(year % 100 === 0){
-            if(year % 400 === 0){
+function leap(year) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
                 console.log("yes");
-            }else{
+            } else {
                 console.log("no");
             }
-        }else{
+        } else {
             console.log("yes");
         }
-    }else {
+    } else {
         console.log("no");
     }
 }
