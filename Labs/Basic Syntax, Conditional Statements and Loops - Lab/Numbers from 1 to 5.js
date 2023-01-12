@@ -1,5 +1,5 @@
-function numTo (){
-    for (let i = 1; i <= 5; i++){
+function numTo() {
+    for (let i = 1; i <= 5; i++) {
         console.log(i);
     }
 }

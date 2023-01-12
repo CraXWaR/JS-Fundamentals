@@ -2,7 +2,7 @@ function num(n) {
     let result = 0;
     let numAsString = String(n);
 
-    for (let i = 0; i < numAsString.length; i++){
+    for (let i = 0; i < numAsString.length; i++) {
         result += Number(numAsString[i]);
     }
 
@@ -10,8 +10,8 @@ function num(n) {
 
     let special = false;
 
-    for (let i = 0; i < resultAsString.length; i++){
-        if (resultAsString[i] === '9'){
+    for (let i = 0; i < resultAsString.length; i++) {
+        if (resultAsString[i] === '9') {
             special = true;
         }
     }

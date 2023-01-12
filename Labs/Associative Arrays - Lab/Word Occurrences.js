@@ -5,7 +5,7 @@ function solve(input) {
 
         if (iterator in result) {
             result[iterator] += 1
-        }else{
+        } else {
             result[iterator] = 1
         }
     }
@@ -13,7 +13,7 @@ function solve(input) {
     for (const iterator in result) {
         arr.push([iterator, result[iterator]])
     }
-    arr.sort(function(a, b) {
+    arr.sort(function (a, b) {
         return b[1] - a[1]
     })
     for (const a in arr) {

@@ -4,9 +4,9 @@ function sums(n, k) {
     for (let index = 0; index < n - 1; index++) {
         let lastK = result.slice(-k);
         let sum = 0;
-            for (let element of lastK) {
-               sum += element 
-            }
+        for (let element of lastK) {
+            sum += element
+        }
         result.push(sum)
     }
     console.log(result.join(' '));

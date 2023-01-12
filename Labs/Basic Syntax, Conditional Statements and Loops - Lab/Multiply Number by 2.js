@@ -1,4 +1,4 @@
-function multy (num) {
+function multy(num) {
     let a = num * 2;
     console.log(a);
 }

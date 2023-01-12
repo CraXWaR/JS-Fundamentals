@@ -7,16 +7,16 @@ function solve(adress) {
     }
     //sort
     let keys = Object.keys(address),
-    i, len = keys.length;
+        i, len = keys.length;
     keys.sort();
     //print 
 
     for (i = 0; i < len; i++) {
         k = keys[i];
         console.log(k + ' -> ' + address[k]);
-      }
+    }
 }
 solve(['Tim:Doe Crossing',
-'Bill:Nelson Place',
-'Peter:Carlyle Ave',
-'Bill:Ornery Rd'])
+    'Bill:Nelson Place',
+    'Peter:Carlyle Ave',
+    'Bill:Ornery Rd'])

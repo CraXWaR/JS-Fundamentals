@@ -1,9 +1,9 @@
 function echo(param) {
     let type = typeof param;
     console.log(type);
-    if(type == 'string' || type == 'number'){
+    if (type == 'string' || type == 'number') {
         console.log(param);
-    }else{
+    } else {
         console.log('Parameter is not suitable for printing');
     }
 }

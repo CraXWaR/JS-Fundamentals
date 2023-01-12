@@ -1,8 +1,8 @@
-function exGrade (grade){
-    if (grade >= 5.50){
+function exGrade(grade) {
+    if (grade >= 5.50) {
         console.log("Excellent");
-    }else{
+    } else {
         console.log("Not excellent");
     }
 }
-grade(5.50)
+exGrade(5.50)

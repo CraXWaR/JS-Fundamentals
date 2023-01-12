@@ -1,10 +1,10 @@
 function lang(country) {
-    if (country == 'England' || country == 'USA'){
+    if (country == 'England' || country == 'USA') {
         console.log("English");
-    }else if (country == 'Spain' || country == 'Argentina' || country == 'Mexico'){
+    } else if (country == 'Spain' || country == 'Argentina' || country == 'Mexico') {
         console.log("Spanish");
-    }else{
+    } else {
         console.log("unknown");
     }
 }
-lang ('England')
+lang('England')

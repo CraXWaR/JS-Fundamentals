@@ -1,6 +1,6 @@
 function sumFl(input) {
     let a = input[0];
-    let b = input[input.length-1];
+    let b = input[input.length - 1];
 
     console.log(a + b);
 }

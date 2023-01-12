@@ -4,7 +4,7 @@ function negativeOrPossitive(arr) {
     for (const iterator of arr) {
         if (iterator < 0) {
             newArr.unshift(iterator)
-        }else{
+        } else {
             newArr.push(iterator)
         }
     }

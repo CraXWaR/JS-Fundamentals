@@ -9,13 +9,13 @@ function solve(grades) {
         if (name in book) {
             let newArr = book[name].concat(tokens)
             book[name] = newArr
-        }else{
+        } else {
             book[name] = tokens
         }
     }
     let keys = Object.keys(book);
-    
-   for (const key of keys) {
+
+    for (const key of keys) {
         let score = book[key]
         let div = score.length
         totalSum[key] = 0
@@ -23,16 +23,16 @@ function solve(grades) {
             totalSum[key] += Number(iterator)
         }
         totalSum[key] /= div
-   }
+    }
     len = keys.length;
     keys.sort();
-   //print 
+    //print 
     for (i = 0; i < len; i++) {
         k = keys[i];
         console.log(`${k}: ${totalSum[k].toFixed(2)}`);
     }
 }
 solve(['Lilly 4 6 6 5',
-'Tim 5 6',
-'Tammy 2 4 3',
-'Tim 6 6'])
+    'Tim 5 6',
+    'Tammy 2 4 3',
+    'Tim 6 6'])
