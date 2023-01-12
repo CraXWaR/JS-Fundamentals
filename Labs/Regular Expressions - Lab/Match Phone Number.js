@@ -1,7 +1,7 @@
 function solve(input) {
     let pattern = /(?:\s|^)\+359( |-)2\1\d{3}\1\d{4}\b/g
     let validPhones = [];
-    
+
     while ((valid = pattern.exec(input)) !== null) {
         validPhones.push(valid[0].trim());
     }

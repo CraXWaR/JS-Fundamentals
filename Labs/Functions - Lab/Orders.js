@@ -1,6 +1,6 @@
 function order(item, n) {
     let price = 0;
-    switch (item){
+    switch (item) {
         case "coffee":
             price = n * 1.50
             break;

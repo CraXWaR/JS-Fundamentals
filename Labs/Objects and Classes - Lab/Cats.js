@@ -2,7 +2,7 @@ function receiveNames(arr) {
     let splitted;
     let catName;
     let catAge;
-    
+
     for (let i = 0; i < arr.length; i++) {
         splitted = arr[i].split(' ');
         catName = splitted[0];

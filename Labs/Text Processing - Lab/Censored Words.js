@@ -1,5 +1,5 @@
 function solve(sentance, word) {
-    while(sentance.includes(word)) {
+    while (sentance.includes(word)) {
         sentance = sentance.replace(word, '*'.repeat(word.length))
     }
     console.log(sentance);

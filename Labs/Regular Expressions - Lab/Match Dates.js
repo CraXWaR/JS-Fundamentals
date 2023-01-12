@@ -5,7 +5,7 @@ function solve(input) {
         let day = validDate.groups['day']
         let month = validDate.groups['month']
         let year = validDate.groups['year']
-        
+
         console.log(`Day: ${day}, Month: ${month}, Year: ${year}`);
     }
 }

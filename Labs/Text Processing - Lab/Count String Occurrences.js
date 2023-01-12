@@ -11,6 +11,6 @@ function solve(text, word) {
     console.log(count);
 }
 solve('This is a word and it also is a sentence',
-'is'
+    'is'
 )
 // let solve = (text, word) => text.split(' ').filter(x => x == word).length;

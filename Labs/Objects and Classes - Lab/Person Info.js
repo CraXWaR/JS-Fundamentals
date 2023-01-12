@@ -9,6 +9,6 @@ function persInfo(firstName, lastName, age) {
 
     console.log(info);
 }
-persInfo("Peter", 
-"Pan",
-"20")
+persInfo("Peter",
+    "Pan",
+    "20")

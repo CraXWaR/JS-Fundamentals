@@ -1,4 +1,4 @@
 function mathP(n, b) {
     console.log(Math.pow(n, b));
 }
-mathP(2,8)
+mathP(2, 8)

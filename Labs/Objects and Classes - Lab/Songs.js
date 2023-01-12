@@ -13,11 +13,11 @@ function songs(input) {
     for (let index = 0; index < numberOfSongs; index++) {
         let [type, name, time] = input[index].split('_');
         let song = new Song(type, name, time)
-        songs.push(song);     
+        songs.push(song);
     }
     if (typeSong === 'all') {
         songs.forEach((i) => console.log(i.name));
-    }else{
+    } else {
         let filtered = songs.filter((i) => i.type === typeSong);
         filtered.forEach((i) => console.log(i.name));
     }

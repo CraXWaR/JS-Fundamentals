@@ -5,7 +5,7 @@ function conventer(name, lastName, hairColor) {
         hairColor
     }
     let result = JSON.stringify(obj)
-    
+
     console.log(result);
 }
 conventer('George', 'Jones', 'Brown')

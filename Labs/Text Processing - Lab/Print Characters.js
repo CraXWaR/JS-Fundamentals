@@ -3,6 +3,4 @@ function solve(input) {
         console.log(iterator);
     }
 }
-solve('AWord'
-
-)
+solve('AWord')
