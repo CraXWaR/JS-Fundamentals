@@ -2,7 +2,7 @@ function solve(input) {
     let demonBook = {};
     let regexp = /\s*,\s*/g;
     let demonNames = input.split(regexp);
- 
+
     let nameTest = /[^\s ,]+/;
     for (const name of demonNames) {
         //check if test is valid, if not - skip it
@@ -15,7 +15,7 @@ function solve(input) {
                 let value = char.charCodeAt(0);
                 demonHealth += value;
             }
- 
+
             //calculate demonPower
             //add & substract
             let demonPower = 0;
@@ -26,7 +26,7 @@ function solve(input) {
             } else {
                 let numsToCalc = charsToCalc.map(Number);
                 numsToCalc.map(x => demonPower += x);
- 
+
             }
             //multiply and divide
             let multiDivTest = /[\*\/]/g;
@@ -40,11 +40,11 @@ function solve(input) {
                     }
                 }
             }
- 
+
             if (!demonBook.hasOwnProperty(name)) {
                 demonBook[name] = [demonHealth, demonPower];
             }
- 
+
         } else {
             continue;
         }

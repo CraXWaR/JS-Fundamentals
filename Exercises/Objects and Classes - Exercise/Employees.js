@@ -3,7 +3,7 @@ function eplo(input) {
     for (const iterator of input) {
         eploy.name = iterator
         eploy.numb = iterator.length;
-        
+
         console.log(`Name: ${eploy.name} -- Personal Number: ${eploy.numb}`);
     }
 }
@@ -12,4 +12,4 @@ eplo([
     'Adnaan Buckley',
     'Juan Peterson',
     'Brendan Villarreal'
-    ])
+])

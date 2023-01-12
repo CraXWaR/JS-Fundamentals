@@ -1,6 +1,6 @@
 function solve(input) {
     let sum = 0;
-    
+
     console.log('Bought furniture:');
     for (const iterator of input) {
         if (iterator === 'Purchase') {
@@ -16,6 +16,6 @@ function solve(input) {
     console.log(`Total money spend: ${sum.toFixed(2)}`);
 }
 solve(['>>Sofa<<312.23!3',
-'>>TV<<300!5',
-'>Invalid<<!5',
-'Purchase'])
+    '>>TV<<300!5',
+    '>Invalid<<!5',
+    'Purchase'])

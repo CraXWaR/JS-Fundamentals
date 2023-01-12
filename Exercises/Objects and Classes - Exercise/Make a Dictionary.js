@@ -5,7 +5,7 @@ function makeADictionary(input) {
         dictionary = Object.assign(dictionary, obj);
     }
     let sort = Object.keys(dictionary)
-    
+
     sort.sort((a, b) => a.localeCompare(b));
 
     for (const iterator of sort) {
@@ -19,5 +19,4 @@ makeADictionary([
     '{"Boiler":"A fuel-burning apparatus or container for heating water."}',
     '{"Tape":"A narrow strip of material, typically used to hold or fasten something."}',
     '{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}'
-    ])
-    
+])

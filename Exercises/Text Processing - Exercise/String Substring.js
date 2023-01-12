@@ -10,4 +10,4 @@ function solve(searchedWord, sentence) {
     console.log(`${searchedWord} not found!`);
 }
 solve('javascript',
-'JavaScript is the best programming language')
+    'JavaScript is the best programming language')

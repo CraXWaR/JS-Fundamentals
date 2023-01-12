@@ -4,11 +4,11 @@ function charInR(a, b) {
 
     let charsInArr = [];
 
-    for (let i = startChar + 1; i < endChar; i++){
+    for (let i = startChar + 1; i < endChar; i++) {
         charsInArr.push(String.fromCharCode(i));
     }
     console.log(charsInArr.join(" "));
 }
 charInR('a',
-'d'
+    'd'
 )

@@ -5,7 +5,7 @@ function passValid(inputPass) {
         if (!lengthCheck(inputPass)) {
             console.log("Password must be between 6 and 10 characters")
         }
-        if (!contentCheck(inputPass)){
+        if (!contentCheck(inputPass)) {
             console.log("Password must consist only of letters and digits")
         }
         if (!digitCountCheck(inputPass)) {
@@ -19,7 +19,7 @@ function passValid(inputPass) {
         let digitCounter = 0;
         for (let char of stringPassword) {
             let charASCIICode = char.charCodeAt(0);
- 
+
             if (charASCIICode >= 48 && charASCIICode <= 57) {
                 digitCounter++;
             }
@@ -30,12 +30,12 @@ function passValid(inputPass) {
     }
     function contentCheck(stringPassword) {
         let isCorrect = true;
- 
+
         for (let char of stringPassword) {
             let charASCIICode = char.charCodeAt(0);
- 
-            if ((charASCIICode >= 48 && charASCIICode <= 57) || 
-            (charASCIICode >= 65 && charASCIICode <= 90) || (charASCIICode >= 97 && charASCIICode <= 122)) {
+
+            if ((charASCIICode >= 48 && charASCIICode <= 57) ||
+                (charASCIICode >= 65 && charASCIICode <= 90) || (charASCIICode >= 97 && charASCIICode <= 122)) {
                 continue;
             } else {
                 isCorrect = false;

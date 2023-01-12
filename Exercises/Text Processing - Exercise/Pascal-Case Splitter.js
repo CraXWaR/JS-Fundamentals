@@ -5,7 +5,7 @@ function solve(input) {
     for (let index = 1; index < input.length; index++) {
         if (input[index].toUpperCase() !== input[index]) {
             currWord = currWord.concat(input[index]);
-        }else{
+        } else {
             words.push(currWord)
             currWord = input[index]
         }

@@ -37,4 +37,4 @@ catalogue([
     'Apple : 1.25',
     'Anti-Bug Spray : 15',
     'T-Shirt : 10'
-    ])
+])

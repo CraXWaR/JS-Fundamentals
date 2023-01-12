@@ -7,4 +7,4 @@ function solve(words, sentence) {
     console.log(sentence);
 }
 solve('great',
-'softuni is ***** place for learning new programming languages')
+    'softuni is ***** place for learning new programming languages')
